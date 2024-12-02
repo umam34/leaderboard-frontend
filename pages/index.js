@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
+import Link from 'next/link';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -112,6 +113,12 @@ export default function Home() {
             Go to nextjs.org →
           </a>
         </footer>
+
+        {/* Menambahkan Link ke Leaderboard */}
+        <div>
+          <h1>Game Leaderboard</h1>
+          <Link href="/leaderboard">Go to Leaderboard</Link>
+        </div>
       </div>
     </>
   );
