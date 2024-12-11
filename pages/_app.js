@@ -1,5 +1,12 @@
-import "@/styles/globals.css";
+import React from 'react';
+import Leaderboard from './Leaderboard.js'; // Pastikan pathnya benar
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function App() {
+  return (
+    <div className="App">
+      <Leaderboard />
+    </div>
+  );
 }
+
+export default App;
